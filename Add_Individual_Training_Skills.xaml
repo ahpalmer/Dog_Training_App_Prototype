@@ -1,0 +1,13 @@
+﻿<Window x:Class="Dog_Training_App_Prototype.Add_Individual_Training_Skills"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dog_Training_App_Prototype"
+        mc:Ignorable="d"
+        Title="Add_Individual_Training_Skills" Height="450" Width="800">
+    <Grid>
+        <Button Content="Main Page" HorizontalAlignment="Left" Height="29" Margin="10,10,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click"/>
+
+    </Grid>
+</Window>

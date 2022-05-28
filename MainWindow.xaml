@@ -1,0 +1,21 @@
+﻿<Window x:Class="Dog_Training_App_Prototype.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dog_Training_App_Prototype"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column ="0" Content="Daily Page" HorizontalAlignment="Left" Margin="50,371,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Daily_Page"/>
+        <Button Grid.Column ="1" Content="Statistics" HorizontalAlignment="Center" Margin="0,376,0,0" VerticalAlignment="Top" Width="62" Click="Goto_Statistics"/>
+        <Button Grid.Column="2" Content="Add Skills" HorizontalAlignment="Left" Height="20" Margin="62,376,0,0" VerticalAlignment="Top" Width="92" Click="Goto_Add_Skills"/>
+        <Button Grid.Column="3" Content="Training Path" HorizontalAlignment="Center" Height="20" Margin="0,376,0,0" VerticalAlignment="Top" Width="84" Click="Goto_Training_Path"/>
+    </Grid>
+</Window>
