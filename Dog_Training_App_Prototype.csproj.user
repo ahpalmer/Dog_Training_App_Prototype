@@ -7,33 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Add_Individual_Training_Skills.xaml.cs">
+    <Compile Update="View\Add_Individual_Training_Skills.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Daily_Page.xaml.cs">
+    <Compile Update="View\Daily_Page.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Statistics_Page.xaml.cs">
+    <Compile Update="View\Statistics_Page.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Training_Path_Page.xaml.cs">
+    <Compile Update="View\Training_Path_Page.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Add_Individual_Training_Skills.xaml">
+    <Page Update="View\Add_Individual_Training_Skills.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Daily_Page.xaml">
+    <Page Update="View\Daily_Page.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="View\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Statistics_Page.xaml">
+    <Page Update="View\Statistics_Page.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Training_Path_Page.xaml">
+    <Page Update="View\Training_Path_Page.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
