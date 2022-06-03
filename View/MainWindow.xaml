@@ -6,16 +6,26 @@
         xmlns:local="clr-namespace:Dog_Training_App_Prototype"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid ShowGridLines="False">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Button Grid.Column ="0" Content="Daily Page" HorizontalAlignment="Left" Margin="50,371,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Daily_Page"/>
-        <Button Grid.Column ="1" Content="Statistics" HorizontalAlignment="Center" Margin="0,376,0,0" VerticalAlignment="Top" Width="62" Click="Goto_Statistics"/>
-        <Button Grid.Column="2" Content="Add Skills" HorizontalAlignment="Left" Height="20" Margin="62,376,0,0" VerticalAlignment="Top" Width="92" Click="Goto_Add_Skills"/>
-        <Button Grid.Column="3" Content="Training Path" HorizontalAlignment="Center" Height="20" Margin="0,376,0,0" VerticalAlignment="Top" Width="84" Click="Goto_Training_Path"/>
+    <Grid ShowGridLines="False" Margin="800,450,0,195">
+        <Button Content="Daily Page" HorizontalAlignment="Left" Height="20" Margin="-748,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Daily_Page"/>
+        <Button Content="Statistics" HorizontalAlignment="Left" Height="20" Margin="-552,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Statistics"/>
+        <Button Content="Add Skills" HorizontalAlignment="Left" Height="20" Margin="-343,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Add_Skills"/>
+        <Button Content="Training Path" HorizontalAlignment="Left" Height="20" Margin="-148,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Training_Path"/>
+        <ListView x:Name="Profile_info" Height="168" Margin="-484,-424,32,0" VerticalAlignment="Top" Width="452">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" Header="User" 
+                        DisplayMemberBinding="{Binding Path=username}"/>
+                    <GridViewColumn Width="100" Header="Pass" 
+                        DisplayMemberBinding="{Binding Path=password}"/>
+                    <GridViewColumn Width="80" Header="Sit" 
+                        DisplayMemberBinding="{Binding Path=sit.skill_selected}"/>
+                    <GridViewColumn Width="80" Header="Lay Down" 
+                        DisplayMemberBinding="{Binding Path=lay_down.skill_selected}"/>
+                    <GridViewColumn Width="80" Header="Come" 
+                        DisplayMemberBinding="{Binding Path=come.skill_selected}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>
