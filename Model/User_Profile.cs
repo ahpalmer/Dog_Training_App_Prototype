@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dog_Training_App_Prototype
 {
-    struct skill_identifier
+    public struct skill_identifier
     {
         public string Name;
         public DateTime? Start_Date;
@@ -21,7 +21,7 @@ namespace Dog_Training_App_Prototype
         skill_identifier lay_down = new skill_identifier();
         skill_identifier come = new skill_identifier();
 
-        User_Profile(string user, string pass)
+        internal User_Profile(string user, string pass)
         {
             username = user;
             password = pass;
@@ -45,10 +45,22 @@ namespace Dog_Training_App_Prototype
             set {  password = value; }
         }
 
+        #region set skills true/false
         public void set_sit_bool(bool sit)
         {
             this.sit.skill_selected = sit;
+            this.sit.Start_Date = DateTime.Now;
         }
-
+        public void set_lay_bool(bool sit)
+        {
+            this.lay_down.skill_selected = sit;
+            this.lay_down.Start_Date= DateTime.Now;
+        }
+        public void set_come_bool(bool sit)
+        {
+            this.come.skill_selected = sit;
+            this.lay_down.Start_Date = DateTime.Now;
+        }
+        #endregion
     }
 }

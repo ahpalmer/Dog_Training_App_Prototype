@@ -27,5 +27,12 @@
                 </GridView>
             </ListView.View>
         </ListView>
+
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="-759,-424,0,0" TextWrapping="Wrap" Text="Username: " VerticalAlignment="Top" Width="73" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="18" Margin="-759,-367,0,0" TextWrapping="Wrap" Text="Password: " VerticalAlignment="Top" Width="73"/>
+        <!--<PasswordBox x:Name="password_input" HorizontalAlignment="Left" Height="18" Margin="-681,-367,0,0" VerticalAlignment="Top" Width="132"/>-->
+        <TextBox x:Name="username_input" HorizontalAlignment="Left" Height="18" Margin="-681,-424,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="password_input" HorizontalAlignment="Left" Height="18" Margin="-681,-367,0,0" VerticalAlignment="Top" Width="132"/>
+        <Button Content="Log on" HorizontalAlignment="Left" Height="29" Margin="-709,-319,0,0" VerticalAlignment="Top" Width="87" Click="Logon_Click"/>
     </Grid>
 </Window>

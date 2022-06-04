@@ -52,5 +52,22 @@ namespace Dog_Training_App_Prototype
             this.Visibility = Visibility.Hidden;
             training_path.Show();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        public void Logon_Click(object sender, RoutedEventArgs e)
+        {
+            string user_str;
+            string pass_str;
+
+            user_str = username_input.Text;
+            //I recognize that you are not supposed to take passwords as text.  This is a placeholder to get the app working, and then I'll start looking into programatic ways to input passwords.
+            pass_str = password_input.Text;
+            var User1 = new User_Profile(user_str, pass_str);
+
+        }
     }
 }
