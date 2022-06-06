@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,11 @@ namespace Dog_Training_App_Prototype
         public MainWindow()
         {
             InitializeComponent();
+            var YourGridList = new ObservableCollection<GridElement>();
+            string user_str0 = "default user";
+            string pass_str0 = "default pass";
+            var User1 = new User_Profile(user_str0, pass_str0);
+
         }
 
         private void Goto_Daily_Page(object sender, RoutedEventArgs e)
@@ -60,13 +66,14 @@ namespace Dog_Training_App_Prototype
 
         public void Logon_Click(object sender, RoutedEventArgs e)
         {
+            //Will need a separate "create user" button and method 
             string user_str;
             string pass_str;
-
             user_str = username_input.Text;
             //I recognize that you are not supposed to take passwords as text.  This is a placeholder to get the app working, and then I'll start looking into programatic ways to input passwords.
             pass_str = password_input.Text;
             var User1 = new User_Profile(user_str, pass_str);
+
 
         }
     }

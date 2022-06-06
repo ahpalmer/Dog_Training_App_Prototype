@@ -12,7 +12,7 @@
         <Button Content="Add Skills" HorizontalAlignment="Left" Height="20" Margin="-343,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Add_Skills"/>
         <Button Content="Training Path" HorizontalAlignment="Left" Height="20" Margin="-148,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Training_Path"/>
         <ListView x:Name="Profile_info" Height="168" Margin="-484,-424,32,0" VerticalAlignment="Top" Width="452">
-            <ListView.View>
+            <ListView.View x:class ="listview" ItemsSource = "{Binding Path =User1}">
                 <GridView>
                     <GridViewColumn Width="100" Header="User" 
                         DisplayMemberBinding="{Binding Path=username}"/>

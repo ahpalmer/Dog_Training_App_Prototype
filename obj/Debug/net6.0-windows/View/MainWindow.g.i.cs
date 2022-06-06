@@ -77,7 +77,7 @@ namespace Dog_Training_App_Prototype {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Dog_Training_App_Prototype;component/view/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Dog_Training_App_Prototype;V1.0.0.0;component/view/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
