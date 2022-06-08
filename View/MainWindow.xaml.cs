@@ -24,11 +24,13 @@ namespace Dog_Training_App_Prototype
         public MainWindow()
         {
             InitializeComponent();
-            var YourGridList = new ObservableCollection<GridElement>();
+
+            var yourGridList = new ObservableCollection<User_Profile>();
             string user_str0 = "default user";
             string pass_str0 = "default pass";
             var User1 = new User_Profile(user_str0, pass_str0);
-
+            yourGridList.Add(User1);
+            DataContext = yourGridList;
         }
 
         private void Goto_Daily_Page(object sender, RoutedEventArgs e)

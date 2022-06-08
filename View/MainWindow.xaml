@@ -11,13 +11,14 @@
         <Button Content="Statistics" HorizontalAlignment="Left" Height="20" Margin="-552,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Statistics"/>
         <Button Content="Add Skills" HorizontalAlignment="Left" Height="20" Margin="-343,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Add_Skills"/>
         <Button Content="Training Path" HorizontalAlignment="Left" Height="20" Margin="-148,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Training_Path"/>
-        <ListView x:Name="Profile_info" Height="168" Margin="-484,-424,32,0" VerticalAlignment="Top" Width="452">
-            <ListView.View x:class ="listview" ItemsSource = "{Binding Path =User1}">
+        <ListView ItemsSource="{Binding}" x:Name="Profile_info" Height="168" Margin="-484,-424,32,0" VerticalAlignment="Top" Width="452">
+            <ListView.View>
                 <GridView>
                     <GridViewColumn Width="100" Header="User" 
-                        DisplayMemberBinding="{Binding Path=username}"/>
+                        DisplayMemberBinding="{Binding Path=Username}"/>
                     <GridViewColumn Width="100" Header="Pass" 
-                        DisplayMemberBinding="{Binding Path=password}"/>
+                        DisplayMemberBinding="{Binding Path=Password}"/>
+                    <!-- You cannot access `sit` because it is a field, you can only bind to properties -->
                     <GridViewColumn Width="80" Header="Sit" 
                         DisplayMemberBinding="{Binding Path=sit.skill_selected}"/>
                     <GridViewColumn Width="80" Header="Lay Down" 
