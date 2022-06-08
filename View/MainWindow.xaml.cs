@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,11 +25,17 @@ namespace Dog_Training_App_Prototype
         public MainWindow()
         {
             InitializeComponent();
-            var YourGridList = new ObservableCollection<GridElement>();
+            Trace.WriteLine("test\ntest\ntest\ntest");
             string user_str0 = "default user";
             string pass_str0 = "default pass";
-            var User1 = new User_Profile(user_str0, pass_str0);
-
+            //User_Profile user1 = new User_Profile(user_str0, pass_str0);
+            this.DataContext = new User_Profile(user_str0, pass_str0);
+            Trace.WriteLine($"{DataContext.GetType()}");
+            //DataContext.Username = user_str0;
+            //DataContext.User_Profile.Username = user_str0;
+            //this.DataContext.Username = user_str0;
+            //Trace.WriteLine($"{user_str0} \n{pass_str0} \n{user1.Username} \n{DataContext.Username}");
+            //MainWindow.DataContextProperty
         }
 
         private void Goto_Daily_Page(object sender, RoutedEventArgs e)

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Dog_Training_App_Prototype
 {
@@ -13,7 +15,7 @@ namespace Dog_Training_App_Prototype
         public bool skill_selected;
     }
 
-    internal class User_Profile
+    public class User_Profile : INotifyPropertyChanged
     {
         private string username;
         private string password;
@@ -62,5 +64,15 @@ namespace Dog_Training_App_Prototype
             this.lay_down.Start_Date = DateTime.Now;
         }
         #endregion
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(string info)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(info));
+            }
+        }
     }
 }

@@ -6,24 +6,27 @@
         xmlns:local="clr-namespace:Dog_Training_App_Prototype"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <!--<Window.DataContext>
+        <local:/>
+    </Window.DataContext>-->
     <Grid ShowGridLines="False" Margin="800,450,0,195">
         <Button Content="Daily Page" HorizontalAlignment="Left" Height="20" Margin="-748,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Daily_Page"/>
         <Button Content="Statistics" HorizontalAlignment="Left" Height="20" Margin="-552,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Statistics"/>
         <Button Content="Add Skills" HorizontalAlignment="Left" Height="20" Margin="-343,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Add_Skills"/>
         <Button Content="Training Path" HorizontalAlignment="Left" Height="20" Margin="-148,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Training_Path"/>
-        <ListView x:Name="Profile_info" Height="168" Margin="-484,-424,32,0" VerticalAlignment="Top" Width="452">
-            <ListView.View x:class ="listview" ItemsSource = "{Binding Path =User1}">
+        <ListView x:Name="Profile_info" ItemsSource ="{Binding}" Height="168" Margin="-484,-424,32,0" VerticalAlignment="Top" Width="452">
+            <ListView.View>
                 <GridView>
                     <GridViewColumn Width="100" Header="User" 
-                        DisplayMemberBinding="{Binding Path=username}"/>
+                            DisplayMemberBinding="{Binding Path = Username}"/>
                     <GridViewColumn Width="100" Header="Pass" 
-                        DisplayMemberBinding="{Binding Path=password}"/>
+                            DisplayMemberBinding="{Binding Path = Password}"/>
                     <GridViewColumn Width="80" Header="Sit" 
-                        DisplayMemberBinding="{Binding Path=sit.skill_selected}"/>
+                            DisplayMemberBinding="{Binding Path = sit.skill_selected}"/>
                     <GridViewColumn Width="80" Header="Lay Down" 
-                        DisplayMemberBinding="{Binding Path=lay_down.skill_selected}"/>
+                            DisplayMemberBinding="{Binding Path = lay_down.skill_selected}"/>
                     <GridViewColumn Width="80" Header="Come" 
-                        DisplayMemberBinding="{Binding Path=come.skill_selected}"/>
+                            DisplayMemberBinding="{Binding Path = come.skill_selected}"/>
                 </GridView>
             </ListView.View>
         </ListView>

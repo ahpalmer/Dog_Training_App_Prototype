@@ -56,3 +56,4 @@ C:\Users\ahpal\OneDrive\Documents\2GitHub\Dog_Training_App_Prototype\obj\Debug\n
 C:\Users\ahpal\OneDrive\Documents\2GitHub\Dog_Training_App_Prototype\obj\Debug\net6.0-windows\View\MainWindow.baml
 C:\Users\ahpal\OneDrive\Documents\2GitHub\Dog_Training_App_Prototype\obj\Debug\net6.0-windows\View\Statistics_Page.baml
 C:\Users\ahpal\OneDrive\Documents\2GitHub\Dog_Training_App_Prototype\obj\Debug\net6.0-windows\View\Training_Path_Page.baml
+C:\Users\ahpal\OneDrive\Documents\2GitHub\Dog_Training_App_Prototype\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
