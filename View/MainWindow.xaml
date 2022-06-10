@@ -6,9 +6,6 @@
         xmlns:local="clr-namespace:Dog_Training_App_Prototype"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <!--<Window.DataContext>
-        <local:/>
-    </Window.DataContext>-->
     <Grid ShowGridLines="False" Margin="800,450,0,195">
         <Button Content="Daily Page" HorizontalAlignment="Left" Height="20" Margin="-748,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Daily_Page"/>
         <Button Content="Statistics" HorizontalAlignment="Left" Height="20" Margin="-552,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Statistics"/>

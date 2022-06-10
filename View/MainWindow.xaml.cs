@@ -28,8 +28,11 @@ namespace Dog_Training_App_Prototype
             Trace.WriteLine("test\ntest\ntest\ntest");
             string user_str0 = "default user";
             string pass_str0 = "default pass";
+            var YourGridList = new ObservableCollection<UserProfile>();
+            var User1 = new UserProfile(user_str0, pass_str0);
             //User_Profile user1 = new User_Profile(user_str0, pass_str0);
-            this.DataContext = new User_Profile(user_str0, pass_str0);
+            YourGridList.Add(User1);
+            DataContext = YourGridList;
             Trace.WriteLine($"{DataContext.GetType()}");
             //DataContext.Username = user_str0;
             //DataContext.User_Profile.Username = user_str0;
@@ -79,8 +82,9 @@ namespace Dog_Training_App_Prototype
             user_str = username_input.Text;
             //I recognize that you are not supposed to take passwords as text.  This is a placeholder to get the app working, and then I'll start looking into programatic ways to input passwords.
             pass_str = password_input.Text;
-            var User1 = new User_Profile(user_str, pass_str);
-
+            var User1 = new UserProfile(user_str, pass_str);
+            
+            //TODO: add user to DB after you connect DB to model
 
         }
     }
