@@ -30,15 +30,14 @@ namespace Dog_Training_App_Prototype
             string pass_str0 = "default pass";
             var YourGridList = new ObservableCollection<UserProfile>();
             var User1 = new UserProfile(user_str0, pass_str0);
-            //User_Profile user1 = new User_Profile(user_str0, pass_str0);
             YourGridList.Add(User1);
             DataContext = YourGridList;
             Trace.WriteLine($"{DataContext.GetType()}");
-            //DataContext.Username = user_str0;
-            //DataContext.User_Profile.Username = user_str0;
-            //this.DataContext.Username = user_str0;
-            //Trace.WriteLine($"{user_str0} \n{pass_str0} \n{user1.Username} \n{DataContext.Username}");
-            //MainWindow.DataContextProperty
+            var User2 = new UserProfile("user2", "pass2");
+            YourGridList.Add(User2);
+            //User1.Password = "test changing the password";
+
+
         }
 
         private void Goto_Daily_Page(object sender, RoutedEventArgs e)
