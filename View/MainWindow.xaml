@@ -11,19 +11,19 @@
         <Button Content="Statistics" HorizontalAlignment="Left" Height="20" Margin="-552,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Statistics"/>
         <Button Content="Add Skills" HorizontalAlignment="Left" Height="20" Margin="-343,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Add_Skills"/>
         <Button Content="Training Path" HorizontalAlignment="Left" Height="20" Margin="-148,-65,0,0" VerticalAlignment="Top" Width="96" Click="Goto_Training_Path"/>
-        <ListView x:Name="Profile_info" ItemsSource ="{Binding}" Height="168" Margin="-484,-424,32,0" VerticalAlignment="Top" Width="452">
+        <ListView x:Name="listView1" ItemsSource ="{Binding}" Height="168" Margin="-484,-424,32,0" VerticalAlignment="Top" Width="452">
             <ListView.View>
-                <GridView>
+                <GridView x:Name="gridView1">
                     <GridViewColumn Width="100" Header="User" 
                             DisplayMemberBinding="{Binding Path = Username}"/>
                     <GridViewColumn Width="100" Header="Pass" 
                             DisplayMemberBinding="{Binding Path = Password}"/>
                     <GridViewColumn Width="80" Header="Sit" 
-                            DisplayMemberBinding="{Binding Path = sit.skill_selected}"/>
+                            DisplayMemberBinding="{Binding Path = sit.skillSelected}"/>
                     <GridViewColumn Width="80" Header="Lay Down" 
-                            DisplayMemberBinding="{Binding Path = lay_down.skill_selected}"/>
+                            DisplayMemberBinding="{Binding Path = layDown.skillSelected}"/>
                     <GridViewColumn Width="80" Header="Come" 
-                            DisplayMemberBinding="{Binding Path = come.skill_selected}"/>
+                            DisplayMemberBinding="{Binding Path = come.skillSelected}"/>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -33,6 +33,7 @@
         <!--<PasswordBox x:Name="password_input" HorizontalAlignment="Left" Height="18" Margin="-681,-367,0,0" VerticalAlignment="Top" Width="132"/>-->
         <TextBox x:Name="username_input" HorizontalAlignment="Left" Height="18" Margin="-681,-424,0,0" TextWrapping="Wrap" Text="User" VerticalAlignment="Top" Width="132"/>
         <TextBox x:Name="password_input" HorizontalAlignment="Left" Height="18" Margin="-681,-367,0,0" VerticalAlignment="Top" Width="132"/>
-        <Button Content="Log on" HorizontalAlignment="Left" Height="29" Margin="-709,-319,0,0" VerticalAlignment="Top" Width="87" Click="Logon_Click"/>
+        <Button Content="Create User" HorizontalAlignment="Left" Height="29" Margin="-759,-318,0,0" VerticalAlignment="Top" Width="87" Click="CreateUserClick"/>
+        <Button Content="Log In" HorizontalAlignment="Left" Height="29" Margin="-636,-318,0,0" VerticalAlignment="Top" Width="87" Click="LogonClick"/>
     </Grid>
 </Window>

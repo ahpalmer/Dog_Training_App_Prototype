@@ -24,11 +24,26 @@ namespace Dog_Training_App_Prototype
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ReturnMain(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();
             this.Visibility = Visibility.Hidden;
             mainWindow.Show();
+        }
+
+        private void AddSit(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddLayDown(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AddCome(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
